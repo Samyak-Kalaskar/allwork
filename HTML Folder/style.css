@@ -1,0 +1,18 @@
+div{
+    background-color: tomato;
+    color: white;
+    border: black;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 50px;
+}
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  nav ul{
+    list-style-type: none;
+  }
+  
+
