@@ -4,78 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px; 
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: calc(100% - 160px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        hr {
+            margin-top: 20px;
+        }
+        
+    </style>
 </head>
 <body>
     <form action="succ.html">
         <div class="container">
-          <h1>Sign up Page</h1>
-          <hr>
+            <h1>Sign up Page</h1>
+            <hr>
 
-          <label for="fname">First Name :</label>
-          <input type="text" id="fname" name="fname">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname">
+            <br>
 
-          <br>
-          <br>
-          
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname">
+            <br>
 
-          <label for="fname">last Name :</label>
-          <input type="text" id="flast" name="fname">
+            <label for="psw"><b>Password:</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+            <br>
 
-          <br>
-          <br>
-      
-          <label for="psw"><b>Password :</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            <br>
 
-          <br>
-          <br>
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male" value="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <br>
 
-          <label for="birthday">Birthday:</label>
-         <input type="date" id="birthday" name="birthday">
+            <label for="mobile">Mobile NO.:</label>
+            <input type="text" id="mobile" name="mobile">
+            <br>
 
-          <br>
-          <br>
+            <label for="branch">Branch:</label>
+            <select id="branch" name="branch">
+                <option value="cse">CSE</option>
+                <option value="it">IT</option>
+                <option value="civil">CIVIL</option>
+                <option value="mech">MECH</option>
+            </select>
+            <br>
 
-          <label for="male">Male</label>
-        <input type="radio" name="gender" id="male" value="male" checked>
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="female" value="female">
-
-        <br>
-          <br>
-
-        <label for="fname">Mobile NO. :</label>
-          <input type="text" id="flast" name="fname">
-<br>
-          <br>
-          <label for="fname">Branch :</label>
-          <select id="cars">
-            <option value="volvo">CSE</option>
-            <option value="saab">IT</option>
-            <option value="opel">CIVIL</option>
-            <option value="audi">MECH</option>
-          </select>
-          <br>
-          <br>
-          <label for="fname">hobbies :</label>
-          <input type="text" id="flast" name="fname">
-          <br>
-          <br>
-
-      
-          <br>
-          <br>
-      
-         
-          <button type="submit" class="registerbtn" onclick="succ.html">Submit</button>
-          <button type="submit" class="registerbtn">Reset</button>
-          <textarea id="w3review" name="w3review" rows="4" cols="50">
-            </textarea>
+            <label for="hobbies">Hobbies:</label>
+            <input type="text" id="hobbies" name="hobbies">
+            <br>
+            <textarea id="w3review" name="w3review" rows="4" cols="50" style="width: 669px; height: 92px;"></textarea>
+            <button type="submit" class="registerbtn">Submit</button>
+            <button type="reset" class="registerbtn">Reset</button>
         </div>
         <hr>
-      
-      
-      </form>
-    
+    </form>
 </body>
 </html>
