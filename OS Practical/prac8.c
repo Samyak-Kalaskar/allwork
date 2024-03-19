@@ -3,11 +3,11 @@ void main()
 {
     int frag[25],b[25],p[25],i,j,nb,np,temp,lowest=10000;
     int bf[25],ff[25];
-    printf("Enter the number of block :");
+    printf("\nEnter the number of blocks :");
     scanf("%d",&nb);
     printf("Enter the number of process :");
     scanf("%d",&np);
-    printf("\nEnter the size of the block :-\n");
+    printf("\nEnter the size of the blocks :-\n");
     for(i=1;i<=nb;i++)
     {
         printf("Block %d:",i);
@@ -42,5 +42,5 @@ void main()
     }
     printf("\nProcess No\tProcess Size \tBlock No\tBlock Size\tFragment");
     for(i=1;i<=np&&ff[i]!=0;i++)
-    printf("\n%d\t\t%d\t\t%d\t\t%d",i,p[i],ff[i],b[ff[i]],frag[i]);
+    printf(" \n     %d\t\t     %d\t\t    %d\t\t       %d\t\t    %d",i,p[i],ff[i],b[ff[i]],frag[i]);
 }
