@@ -1,31 +1,28 @@
-#include <stdio.h>
+#include<stdio.h>
+#include <stdlib.h>
 
-int main() {
-    int n, i, seek_time = 0, total_seek_time = 0;
-    int queue[20];
-
-    printf("Enter the number of requests: ");
-    scanf("%d", &n);
-
-    printf("Enter the request queue: ");
-    for (i = 0; i < n; i++) {
-        scanf("%d", &queue[i]);
+int main()
+{
+    int queue[20],n,head,i,j,k,seek=0,max,diff;
+    float avg;
+    printf("Enter max range of disk :\n");
+    scanf("%d",&max);
+    printf("Enter the size of queue request :\n");
+    scanf("%d",&n);
+    printf("Enter the queue of disk positions to be read:\n");
+    for(i=1;i<=n;i++)
+    scanf("%d",&queue[i]);
+    printf("Enter the initial head position :\n");
+    scanf("%d",&head);
+    queue[0]=head;
+    for(j=0;j<=n-1;j++)
+    {
+        diff=abs(queue[j+1]-queue[j]);
+        seek+=diff;
+        printf("Disk head moves from %d to %d with seek %d\n",queue[j],queue[j+1],diff);
     }
-
-    int head;
-    printf("Enter the initial position of the disk head: ");
-    scanf("%d", &head);
-
-    // Calculate seek time
-    for (i = 0; i < n; i++) {
-        seek_time = abs(queue[i] - head);
-        total_seek_time += seek_time;
-        head = queue[i];
-        printf("Seek time for request %d: %d\n", queue[i], seek_time);
-    }
-
-    printf("Total seek time: %d\n", total_seek_time);
-    printf("Average seek time: %.2f\n", (float)total_seek_time / n);
-
+    printf("Total seek time is %d\n",seek);
+    avg=seek/(float)n;
+    printf("Average seek time is %f\n ",avg);
     return 0;
 }
