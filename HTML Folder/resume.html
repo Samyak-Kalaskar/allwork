@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Resume</title>
+</head>
+
+<body>
+    <style>
+        body{
+  padding: 2rem;
+}
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+h1, h4{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+  color: cornflowerblue;
+}
+
+h4{
+  color: darkcyan;
+  font-size: large;
+}
+
+span{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.left-content{
+  color: white;
+  flex: 1;
+  padding:40px;
+  background-color: #343c4b;
+}
+
+.left-content img{
+  width: 190px;
+  border-radius: 50%;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+
+.right-content{
+  flex: 3;
+  padding: 30px;
+  margin-top: -5rem;
+  margin-left: 20px;
+}
+
+.Name{
+  color:#22252b ;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Collage{
+  color: #343c4b;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Education-section span{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Expertise-section ul{
+  margin-left: -10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+    </style>
+    <div class="main">
+        <div class="left-content">
+            <img width="50"
+                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="">
+            <div class="contact-section">
+                <h1>Contact</h1>
+                <hr>
+
+                <div>
+                    <h4>Phone</h4>
+                    <span>+91 7001472356</span>
+                </div>
+
+                <div>
+                    <h4>Email</h4>
+                    <span>Abhishek@gmail.com</span>
+                </div>
+
+                <div>
+                    <h4>Address</h4>
+                    <span>Amravti</span> 
+                </div>
+            </div>
+            <br>
+
+            <div class="Expertise-section">
+                <h1>Skills</h1>
+                <hr>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>React</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-content">
+            <h1 class="Name">Abhishek Kadam</h1>
+            <h3 class="Collage">Computer Science and Engineering</h3>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nostrum eveniet dolor dolorum
+                laboriosam, amet assumenda tenetur rem sequi esse quisquam ipsum. Laboriosam expedita perspiciatis
+                tempora architecto sed consequatur officiis.</span>
+            <br>
+            <br>
+            <br>
+            <div class="Education-section">
+                <h1>Education</h1>
+                <hr>
+             
+                <span>2023</span><br>
+                <span>Degree</span><br>
+                <span>Computer science and Engineering</span><br>
+                <span>Sipna COET</span>
+            </div>
+            <br>
+            <div class="Experience">
+                <h1>Project</h1>
+                <hr>
+                <li>E commerce app</li>
+                <li>Nursery Management System</li>
+                <br>
+               
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
